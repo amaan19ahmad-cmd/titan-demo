@@ -1,0 +1,57 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TITAN Mobile Demo</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#080a0d;color:#f3f5f7;font-family:Arial,sans-serif}
+main{max-width:520px;margin:auto;padding:22px 16px 80px}.top{display:flex;justify-content:space-between;align-items:center}
+h1{font-size:34px;margin:5px 0 22px}.ey{font-size:10px;letter-spacing:2px;color:#87919c;font-weight:bold}
+.status{font-size:10px;border:1px solid #27303a;padding:8px 10px;border-radius:20px}.card{background:#11151a;border:1px solid #252c34;border-radius:20px;padding:18px;margin:12px 0}
+h2{margin:5px 0 8px;font-size:22px}.muted{color:#89939e;font-size:12px;line-height:1.5}.brief{background:#0b0e12;border:1px solid #1f252c;border-radius:14px;padding:14px;margin-top:9px}
+.brief b{display:block;font-size:12px;margin-bottom:5px}.brief span{font-size:14px;line-height:1.5;color:#cbd1d7}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.metric strong{font-size:25px;display:block;margin-top:8px}.good{color:#76efa2}.warn{color:#f1c66d}
+.agent{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid #20262d;font-size:12px}.agent:last-child{border:0}
+button{width:100%;padding:13px;border:0;border-radius:12px;font-weight:bold;margin-top:10px}.secondary{background:#1a2027;color:#fff;border:1px solid #303944}
+#why{display:none;background:#0b0e12;border-radius:12px;padding:12px;margin-top:10px;font-size:12px;line-height:1.6;color:#aeb6bf}
+</style></head>
+<body><main>
+<div class="top"><div><div class="ey">AI COMMERCE OS</div><h1>TITAN</h1></div><div class="status">● JARVIS ONLINE</div></div>
+
+<section class="card">
+<div class="ey">JARVIS MORNING BRIEF · DEMO</div><h2>Good morning.</h2>
+<div class="muted">Refreshed 09:55 · Jarvis confidence 94% · Demo data</div>
+<div class="brief"><b>01 · OVERNIGHT</b><span>GMV reached <strong>£1,428</strong>, up 18% versus the previous overnight window. 73 units sold.</span></div>
+<div class="brief"><b>02 · PRIORITY PRODUCT</b><span><strong>HydraGlow Bottle</strong> led overnight with 31 units sold and £682 GMV.</span></div>
+<div class="brief"><b>03 · TODAY'S MOVE</b><span>Protect the momentum. Stock is approaching your threshold, so restock before increasing promotion.</span></div>
+</section>
+
+<div class="grid">
+<section class="card metric"><div class="ey">OVERNIGHT GMV</div><strong>£1,428</strong><div class="good">↑ 18.2%</div></section>
+<section class="card metric"><div class="ey">UNITS SOLD</div><strong>73</strong><div class="good">↑ 11 units</div></section>
+</div>
+
+<section class="card"><div class="ey">DAYTIME WATCH</div><h2>Alerts</h2>
+<div class="brief"><b class="warn">INVENTORY THRESHOLD</b><span>HydraGlow has 38 units remaining. Your chosen alert threshold is 30.</span></div>
+<div class="brief"><b>CONTENT OPPORTUNITY</b><span>One HydraGlow creative is outperforming its recent baseline. Test two variations of the winning hook.</span></div>
+</section>
+
+<section class="card"><div class="ey">OVERNIGHT TEAM</div><h2>Agent findings</h2>
+<div class="agent"><span>Product Monitor</span><span class="good">98%</span></div>
+<div class="agent"><span>GMV Agent</span><span class="good">99%</span></div>
+<div class="agent"><span>Inventory Agent</span><span class="good">96%</span></div>
+<div class="agent"><span>Performance Agent</span><span class="good">92%</span></div>
+<div class="agent"><span>Content Agent</span><span class="good">87%</span></div>
+<div class="agent"><span>Growth Agent</span><span class="good">84%</span></div>
+<div class="agent"><span>Anomaly Agent</span><span class="good">95%</span></div>
+<div class="agent"><span>Trend Agent</span><span class="warn">WITHHELD</span></div>
+</section>
+
+<section class="card"><div class="ey">JARVIS RECOMMENDATION</div><h2>Restock before pushing harder.</h2>
+<p style="font-size:14px;line-height:1.55;color:#cbd1d7">HydraGlow is your strongest overnight product, but inventory is moving toward your chosen threshold. Protect stock first, then produce two variations of the winning creative.</p>
+<div id="why"><b>Evidence</b><br>Product Monitor: 31 units sold.<br>GMV Agent: £682 product GMV.<br>Inventory Agent: 38 units remain; threshold 30.<br>Content Agent: winning creative detected.<br><br>Refreshed 09:55 · Confidence 94%.</div>
+<button class="secondary" onclick="let x=document.getElementById('why');x.style.display=x.style.display==='block'?'none':'block'">WHY IS JARVIS RECOMMENDING THIS?</button>
+<button onclick="alert('Demo only — Titan will never change the shop without approval.')">REVIEW ACTION</button>
+</section>
+
+<section class="card"><div class="ey">RELIABILITY RULE</div><h2>No guessing.</h2>
+<div class="muted">Trend Agent does not have enough reliable evidence, so Jarvis withheld its recommendation instead of inventing one.</div></section>
+</main></body></html>
