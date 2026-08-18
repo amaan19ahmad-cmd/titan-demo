@@ -1,0 +1,32 @@
+{
+  "name": "titan-growth-command-center",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Titan AI Growth Command Center — an evidence-first commerce operating system.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "packageManager": "pnpm@11.19.0",
+  "dependencies": {
+    "geist": "^1.7.0",
+    "lucide-react": "^0.544.0",
+    "next": "16.3.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "16.3.1",
+    "typescript": "5.9.3"
+  }
+}
